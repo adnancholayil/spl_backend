@@ -10,7 +10,8 @@ const teamSchema = new mongoose.Schema({
   currentBalance: { type: Number, default: 5000 },
   totalSpent: { type: Number, default: 0 },
   playersBought: { type: Number, default: 0 },
-  logoUrl: { type: String }
+  logoUrl: { type: String },
+  managerPhotoUrl: { type: String }
 }, { timestamps: true });
 
 module.exports = mongoose.model('Team', teamSchema);
